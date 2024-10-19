@@ -1,0 +1,59 @@
+body {
+    font-family: "Times New Roman", Times, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('ABOUT-YOU-CAT.jpg');
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: black;
+    color: white;
+}
+
+.container {
+    text-align: left;
+    max-width: 800px;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#audio {
+    margin-bottom: 20px;
+}
+
+#lyrics-container {
+    height: 100px; /* Adjust this value based on your needs */
+    position: relative;
+    overflow: hidden;
+}
+
+#lyrics {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+
+.lyric-line {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.lyric-line.active {
+    opacity: 1;
+}
